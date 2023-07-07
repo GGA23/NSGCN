@@ -13,8 +13,9 @@ This implementation is based on Python3. To run the code, you need the following
 * CUDA Version: 11.0
 # Datasets
 The data folder contains five homophilic benchmark datasets(Cora, Citeseer, Pubmed, Computers, Photo), and five heterophilic datasets(Chameleon, Squirrel, Cornell, Texas, Wisconsin) from [BernNet](https://github.com/ivam-he/BernNet) and [Geom-GCN](https://github.com/graphdml-uiuc-jlu/geom-gcn). We use the same experimental setting (60\%/20\%/20\% random splits for train/validation/test with the same random seeds, epochs, run ten times, early stopping) as [BernNet](https://github.com/ivam-he/BernNet).   
-# Run an experiment with Chameleon:
+# Run an experiment:
     $ python train.py --dataset Chameleon
+    $ sh demo.sh
 # Baselines links
 * [H2GCN](https://github.com/GitEventhandler/H2GCN-PyTorch)
 * [MixHop](https://github.com/benedekrozemberczki/MixHop-and-N-GCN)
