@@ -90,7 +90,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--seed', type=int, default=2108550661, help='seeds for random splits.')
     parser.add_argument('--epochs', type=int, default=1000, help='max epochs.')
-    parser.add_argument('--lr', type=float, default=0.05, help='learning rate.')
+    parser.add_argument('--lr', type=float, default=0.08, help='learning rate.')
     parser.add_argument('--weight_decay', type=float, default=5e-6, help='weight decay.')
     parser.add_argument('--early_stopping', type=int, default=200, help='early stopping.')
     parser.add_argument('--hidden', type=int, default=64, help='hidden units.')
@@ -101,11 +101,11 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', type=str,
                         choices=['Cora', 'Citeseer', 'Pubmed', 'Computers', 'Photo', 'Chameleon', 'Squirrel', 'Actor',
                                  'Texas', 'Cornell', 'Wisconsin'],
-                        default='Texas')
+                        default='Chameleon')
     parser.add_argument('--device', type=int, default=3, help='GPU device.')
     parser.add_argument('--runs', type=int, default=10, help='number of runs.')
 
-    parser.add_argument('--ks', type=int, default=2, help='number of runs.')
+    parser.add_argument('--ks', type=int, default=3, help='number of runs.')
 
     parser.add_argument('--net', type=str, default='UGCN_SN')
 
