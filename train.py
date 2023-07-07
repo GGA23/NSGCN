@@ -10,7 +10,11 @@ import seaborn as sns
 import numpy as np
 import time
 
+import warnings
 import pandas as pd
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=RuntimeWarning)
+warnings.simplefilter(action='ignore', category=UserWarning)
 
 
 def RunExp(args, dataset, data, Net, percls_trn, val_lb, seed):
