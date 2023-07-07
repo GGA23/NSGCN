@@ -119,7 +119,7 @@ if __name__ == '__main__':
     print("---------------------------------------------")
 
     gnn_name = args.net
-    Net = gnn_name
+    Net = UGCN_SN
 
     dataset = DataLoader(args.dataset)
     data = dataset[0]
