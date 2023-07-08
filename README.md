@@ -18,7 +18,7 @@ The data folder contains five homophilic benchmark datasets(Cora, Citeseer, Pubm
     $ sh demo.sh
 # Examples
  Training a model on the default dataset.  
-![image](https://github.com/GGA23/UGCN-SN/blob/main/demo.gif)
+![image](https://github.com/GGA23/UGCN-SN/blob/main/example.gif)
 
 # Baselines links
 * [H2GCN](https://github.com/GitEventhandler/H2GCN-PyTorch)
