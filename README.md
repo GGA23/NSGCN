@@ -16,6 +16,12 @@ The data folder contains five homophilic benchmark datasets(Cora, Citeseer, Pubm
 # Run an experiment:
     $ python train.py --dataset Chameleon
     $ sh demo.sh
+# Examples
+ Training a model on the default dataset.  
+ 
+ <iframe height=498 width=510 src="(https://github.com/GGA23/UGCN-SN/blob/main/demo.mp4)" frameborder=0 allowfullscreen></iframe>
+
+
 # Baselines links
 * [H2GCN](https://github.com/GitEventhandler/H2GCN-PyTorch)
 * [MixHop](https://github.com/benedekrozemberczki/MixHop-and-N-GCN)
