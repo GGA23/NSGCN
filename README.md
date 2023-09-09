@@ -1,5 +1,5 @@
 # UGCN-SN
-A PyTorch implementation of UGCN-SN "Universal Graph Convolutional Networks with Selective Neighbors". <br>
+A PyTorch implementation of SNGNN "Selective-Neighbors Graph Convolutional Networks for classification". <br>
 code is coming soon
 # Environment Settings
 This implementation is based on Python3. To run the code, you need the following dependencies: <br>
