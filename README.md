@@ -1,5 +1,5 @@
-# SNGCN
-A PyTorch implementation of SNGNN "Selective-Neighbors Graph Convolutional Networks for Classification". <br>
+# NSGCN
+A PyTorch implementation of SNGNN "Neighbors Selective Graph Convolutional Networks for homophily and heterophily". <br>
 code is coming soon
 # Environment Settings
 This implementation is based on Python3. To run the code, you need the following dependencies: <br>
