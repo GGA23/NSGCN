@@ -108,7 +108,7 @@ if __name__ == '__main__':
                         default='Chameleon')
     parser.add_argument('--device', type=int, default=3, help='GPU device.')
     parser.add_argument('--runs', type=int, default=10, help='number of runs.')
-
+    parser.add_argument('--alpha', type=float, default=0.0, help='number of runs.')
     parser.add_argument('--ks', type=int, default=3, help='number of runs.')
 
     parser.add_argument('--net', type=str, default='UGCN_SN')
