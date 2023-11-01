@@ -13,14 +13,14 @@ def similarity_CN(dataset, data, alpha):
     edge_index = data.edge_index
 
     adj = edge_index_to_adj(edge_index)# 无自环
-    A2 = torch.mm(adj,adj)
+    Scn = torch.mm(adj,adj)
     #sim = A2
     feature = data.x
     feature = torch.mm(adj, feature)
     fea_dist = cos(feature.numpy())  # 邻域特征之间的相似性
     fea_dist = torch.from_numpy(fea_dist)
 
-    sim = alpha*A2 + (1-alpha)*fea_dist
+    sim = alpha*Scn + (1-alpha)*fea_dist
 
 
     return sim
