@@ -110,7 +110,7 @@ def normalize_adj(adj):
 
 def load_graph(data, args):
     Numnode = data.x.shape[0]
-    structgraph_path = './CN_data/' + str(args.dataset) + '/c' +  str(args.ks-1) + '.txt'
+    structgraph_path = './CN_data/' + str(args.dataset) + +'/' + str(args.alpha) + '/c' + str(args.ks) + '.txt'
     struct_edges = np.genfromtxt(structgraph_path, dtype=np.int32)
     sedges = np.array(list(struct_edges), dtype=np.int32).reshape(struct_edges.shape)
     sadj = sp.coo_matrix((np.ones(sedges.shape[0]), (sedges[:, 0], sedges[:, 1])), shape=(Numnode, Numnode), dtype=np.float32)
